@@ -1,2 +1,2 @@
-# online grocery store
+# Online Grocery Store
 Made by Rajarya Mitra
