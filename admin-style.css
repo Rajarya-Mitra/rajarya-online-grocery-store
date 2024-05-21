@@ -1,0 +1,285 @@
+/* Reset some default browser styles */
+body, h1, h2, h3, ul, li, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0; /* Increased height */
+}
+
+nav {
+    background-color: #333;
+    text-align: center; /* Center-align content */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 10px 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+section {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Your existing CSS styles */
+
+/* User Management Styles */
+#user-management {
+    font-size: large;
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+#user-list {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+#user-list table {
+    margin-top: 10px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#user-list th, #user-list td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+#user-list th {
+    background-color: #f2f2f2;
+}
+
+#user-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#user-form input[type="text"],
+#user-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#user-form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#user-form #cancel-button {
+    background-color: #ccc;
+}
+
+/* Your existing CSS styles */
+
+/* Product Management Styles */
+#product-management {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+#product-list {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+#product-list table {
+    margin-top: 10px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#product-list th, #product-list td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+#product-list th {
+    background-color: #f2f2f2;
+}
+
+#product-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#product-form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#product-form input[type="date"] {
+    font-size: large;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+
+#product-form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#product-form #cancel-button {
+    background-color: #ccc;
+}
+
+/* Add this CSS to style the order management section */
+.order-management {
+    margin: 20px;
+}
+
+.order-management h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+table {
+    margin-top: 30px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+thead {
+    background-color: #f2f2f2;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #ddd;
+}
+
+.settings {
+    margin: 20px;
+}
+
+.settings h2 {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+form {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+#logout-btn {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px; 
+}
+
+#logout-btn:hover {
+    background-color: #cc0000;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}

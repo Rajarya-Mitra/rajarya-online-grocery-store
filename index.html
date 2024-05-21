@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">
+            <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+            Grocery
+        </a>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#features">Features</a>
+            <a href="#products">Deals</a>
+            <a href="#categories">Categories</a>
+            <a href="#review">Review</a>
+            <a href="#blogs">Blogs</a>
+        </nav>
+        <div class="icons">
+            <div class="fa fa-bars" id="menu-btn"></div>
+            <div class="fa fa-search" id="search-btn"></div>
+            <div class="fa fa-shopping-cart" id="cart-btn"></div>
+            <div class="fa fa-user" id="login-btn"></div>
+        </div>
+        <form class="search-form">
+            <input type="search" id="search-box" placeholder="Search for products...">
+            <label for="search-box" class="fa fa-search"></label>
+        </form>
+        <div class="shopping-cart">
+            <div class="box">
+                <i class="fa fa-trash"></i>
+                <img src="image/watermelon.webp">
+                <div class="content">
+                    <h3>Watermelon</h3>
+                    <span class="price">Rs.79.57</span>
+                    <span class="quantity">Qty : 1</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fa fa-trash"></i>
+                <img src="image/onion.webp">
+                <div class="content">
+                    <h3>Onion</h3>
+                    <span class="price">Rs.54.02</span>
+                    <span class="quantity">Qty : 1 Kg</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fa fa-trash"></i>
+                <img src="image/corn.webp">
+                <div class="content">
+                    <h3>Corn</h3>
+                    <span class="price">Rs.23.36</span>
+                    <span class="quantity">Qty : 2</span>
+                </div>
+            </div>
+            <div class="total"> Total : Rs.156.95</div>
+            <a href="#" class="btn">Checkout</a>
+        </div>
+        <form action="#" class="login-form">
+            <h3>Login now</h3>
+            <input type="email" placeholder="Enter Email Address" class="box">
+            <input type="password" placeholder="Enter Password" class="box">
+            <p>Forgot Your Password? <a href="forgot-password.html">Click Here</a></p>
+            <p>Don't have an Account? <a href="create-account.html">Create Now</a></p>
+            <input type="submit" value="Login Now" class="btn">
+        </form>
+    </header>
+
+    <section  class="home" id="home">
+        <div class="content">
+            <h3>Fresh And <span>Organic</span> Products For You</h3>
+            <p>Fresh fruits and vegetables, top quality pulses and food grains, dairy products and hundreds of branded items handpicked and delivered to your home, all at the click of a button. We bring a whopping 20000+ products with more than 1000 brands, to over 6 million happy customers.</p>
+
+            <a href="#" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <h1 class="heading">Our <span>Features</span></h1>
+
+        <div class="box-container">
+            <div class="box">
+                <img src="image/fresh.webp">
+                <h3>Fresh and Organic</h3>
+                <p>"Indulge in the pure essence of nature with our organic, freshly harvested products, offering unbeatable health and flavor. Our dedication to sustainable farming guarantees trustworthy goodness in every bite."</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="box">
+                <img src="image/delivery.webp">
+                <h3>On Time Delivery</h3>
+                <p>"At our grocery store, we prioritize your time by guaranteeing swift and punctual delivery of fresh, organic products right to your doorstep, ensuring a hassle-free and convenient shopping experience for you."</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="box">
+                <img src="image/payment.jpg">
+                <h3>Easy Payments</h3>
+                <p>
+                    "Discover effortless online payments with our variety of options, including UPI and debit/credit cards, guaranteeing a smooth shopping experience. We prioritize convenience to make your transactions a breeze."</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="products" id="products">
+        <h1 class="heading">Our <span>Products</span></h1>
+        <div class="swiper product-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="image/onion.webp">
+                    <h1>Onion</h1>
+                    <div class="price">Rs.12-15</div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="image/payment.jpg">
+                    <h1>Fresh Orange</h1>
+                    <div class="price">Rs.12-15</div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="image/watermelon.webp">
+                    <h1>Fresh Watermelon</h1>
+                    <div class="price">Rs.12-15</div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="image/corn.webp">
+                    <h1>Fresh Corn</h1>
+                    <div class="price">Rs.12-15</div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="categories" id="categories">
+        <h1 class="heading">Product <span>Categories</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="Image/delivery.png">
+                <h3>Fresh Vegetables</h3>
+                <p>Upto 45% Off</p>
+                <a href="#" class="btn">Shop Now</a>
+            </div>
+            <div class="box">
+                <img src="Image/delivery.png">
+                <h3>Fresh Fruits</h3>
+                <p>Upto 45% Off</p>
+                <a href="#" class="btn">Shop Now</a>
+            </div>
+            <div class="box">
+                <img src="Image/delivery.png">
+                <h3>Dairy Products</h3>
+                <p>Upto 45% Off</p>
+                <a href="#" class="btn">Shop Now</a>
+            </div>
+            <div class="box">
+                <img src="Image/delivery.png">
+                <h3>Fresh Meats</h3>
+                <p>Upto 45% Off</p>
+                <a href="#" class="btn">Shop Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="review" id="review">
+        <h1 class="heading">Customer's <span>Review</span></h1>
+        <div class="swiper review-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="image/slave.jpg">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum repellat officiis dolorem. Temporibus quam eos quos deleniti exercitationem atque expedita, necessitatibus sequi dolores repellat? Officiis praesentium beatae provident eos totam suscipit. Omnis consectetur nihil excepturi, atque libero deserunt accusantium sit quibusdam praesentium provident quia officiis.</p>
+                    <h3>Podi Pishi</h3>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="image/slave.jpg">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum repellat officiis dolorem. Temporibus quam eos quos deleniti exercitationem atque expedita, necessitatibus sequi dolores repellat? Officiis praesentium beatae provident eos totam suscipit. Omnis consectetur nihil excepturi, atque libero deserunt accusantium sit quibusdam praesentium provident quia officiis.</p>
+                    <h3>Shroud</h3>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="image/slave.jpg">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum repellat officiis dolorem. Temporibus quam eos quos deleniti exercitationem atque expedita, necessitatibus sequi dolores repellat? Officiis praesentium beatae provident eos totam suscipit. Omnis consectetur nihil excepturi, atque libero deserunt accusantium sit quibusdam praesentium provident quia officiis.</p>
+                    <h3>Lionel Messi</h3>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="image/slave.jpg">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum repellat officiis dolorem. Temporibus quam eos quos deleniti exercitationem atque expedita, necessitatibus sequi dolores repellat? Officiis praesentium beatae provident eos totam suscipit. Omnis consectetur nihil excepturi, atque libero deserunt accusantium sit quibusdam praesentium provident quia officiis.</p>
+                    <h3>Virat Kohli</h3>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="blogs" id="blogs">
+        <h1 class="heading">Our <span>Blogs</span></h1>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+</body>
+</html>

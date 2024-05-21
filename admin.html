@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="admin-style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome, Administrator</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#user-management">User Management</a></li>
+            <li><a href="#product-management">Product Management</a></li>
+            <li><a href="#order-management">Order Management</a></li>
+            <li><a href="#settings">Settings</a></li>
+        </ul>
+    </nav>
+
+    <section id="user-management">
+        <h2>User Management</h2>
+        <div id="user-list">
+            <h3>User List</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>John Doe</td>
+                        <td>john@example.com</td>
+                        <td>
+                            <button>Edit</button>
+                            <button>Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Jane Smith</td>
+                        <td>jane@example.com</td>
+                        <td>
+                            <button>Edit</button>
+                            <button>Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Michael Johnson</td>
+                        <td>michael@example.com</td>
+                        <td>
+                            <button>Edit</button>
+                            <button>Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Sarah Williams</td>
+                        <td>sarah@example.com</td>
+                        <td>
+                            <button>Edit</button>
+                            <button>Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>David Lee</td>
+                        <td>david@example.com</td>
+                        <td>
+                            <button>Edit</button>
+                            <button>Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="user-form">
+            <h3>Add User</h3>
+            <form>
+                <label for="user-name">Name:</label>
+                <input type="text" id="user-name" required>
+                <label for="user-email">Email:</label>
+                <input type="email" id="user-email" required>
+                <button type="submit">Save</button>
+                <button type="button" id="cancel-button">Cancel</button>
+            </form>
+        </div>
+    </section>
+    <section id="product-management">
+        <h2>Product Management</h2>
+        <div id="product-list">
+            <h3>Product List</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Category</th>
+                        <th>Price</th>
+                        <th>Quantity left</th>
+                        <th>Expiry Date</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Apple</td>
+                        <td>Fruits</td>
+                        <td>$1.00</td>
+                        <td>10 Kg</td>
+                        <td>31/12/2023</td>
+                        <td>
+                            <button>Edit</button>
+                            <button>Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Banana</td>
+                        <td>Fruits</td>
+                        <td>$0.75</td>
+                        <td>10 Kg</td>
+                        <td>31/12/2023</td>
+                        <td>
+                            <button>Edit</button>
+                            <button>Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Orange</td>
+                        <td>Fruits</td>
+                        <td>$1.25</td>
+                        <td>10 Kg</td>
+                        <td>31/12/2023</td>
+                        <td>
+                            <button>Edit</button>
+                            <button>Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Strawberry</td>
+                        <td>Fruits</td>
+                        <td>$2.50</td>
+                        <td>10 Kg</td>
+                        <td>31/12/2023</td>
+                        <td>
+                            <button>Edit</button>
+                            <button>Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Grapes</td>
+                        <td>Fruits</td>
+                        <td>$2.00</td>
+                        <td>10 Kg</td>
+                        <td>31/12/2023</td>
+                        <td>
+                            <button>Edit</button>
+                            <button>Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="product-form">
+            <h3>Add/Edit Products</h3>
+            <form>
+                <label for="product-id">ID:</label>
+                <input type="text" id="product-id" required>
+                <label for="product-name">Name:</label>
+                <input type="text" id="product-name" required>
+                <label for="product-category">Category:</label>
+                <input type="text" id="product-category" required>
+                <label for="product-price">Price:</label>
+                <input type="text" id="product-price" required>
+                <label for="product-quantity">Quantity:</label>
+                <input type="text" id="product-quantity" required>
+                <label for="product-expiry">Expiry Date:</label>
+                <input type="date" id="product-expiry" required>
+                <button type="submit">Save</button>
+                <button type="button" id="cancel-button">Cancel</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="order-management">
+        <h2>Order Management</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Customer Name</th>
+                    <th>Product Name</th>
+                    <th>Quantity</th>
+                    <th>Total Amount</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Sample order data -->
+                <tr>
+                    <td>1</td>
+                    <td>John Doe</td>
+                    <td>Apples</td>
+                    <td>3</td>
+                    <td>$45.99</td>
+                    <td>Shipped</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Jane Smith</td>
+                    <td>Grapes</td>
+                    <td>2 Kg</td>
+                    <td>$29.98</td>
+                    <td>Processing</td>
+                </tr>
+                <!-- Add more order rows as needed -->
+            </tbody>
+        </table>
+    </section>
+
+    <section id="settings">
+        <h2>Settings</h2>
+        <form>
+            <div class="form-group">
+                <label for="site-title">Site Title:</label>
+                <input type="text" id="site-title" name="site-title" value="My Grocery Store">
+            </div>
+            <div class="form-group">
+                <label for="currency">Currency:</label>
+                <select id="currency" name="currency">
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                    <!-- Add more currency options as needed -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="tax-rate">Tax Rate (%):</label>
+                <input type="number" id="tax-rate" name="tax-rate" value="5">
+            </div>
+            <div class="form-group">
+                <label for="notification-email">Notification Email:</label>
+                <input type="email" id="notification-email" name="notification-email" value="admin@example.com">
+            </div>
+            <button type="submit">Save Settings</button>
+        </form>
+        <form>
+            <button type="submit" id="logout-btn" formaction="admin-login.html">Logout</button>
+        </form>
+    </section>
+
+    <footer>
+        &copy; 2023 Admin Panel
+    </footer>
+
+    <script src="admin-script.js"></script>
+</body>
+</html>
